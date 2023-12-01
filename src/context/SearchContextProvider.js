@@ -8,6 +8,7 @@ const SearchContextProvider = ({ children }) => {
   const URL = "http://openlibrary.org/search.json?title=";
   const [isLoading, setIsLoading] = useState(true);
 
+
   useEffect(() => {
     async function fetchData() {
       setIsLoading(true);
@@ -29,6 +30,7 @@ const SearchContextProvider = ({ children }) => {
     }
     fetchData();
   }, [searchValue]);
+
 
   return (
     <SearchContext.Provider value={{ searchValue, setSearchValue, data, isLoading, resultTitle}}>

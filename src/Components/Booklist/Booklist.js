@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-import searchContext from "../../context/SearchContext";
+import SearchContext from "../../context/SearchContext";
 import coverNotFound from "../../Images/cover_not_found.jpg";
-
+import { Link } from "react-router-dom";
 const Booklist = () => {
-  const { data, isLoading, resultTitle } = useContext(searchContext);
+  const { data, isLoading, resultTitle } = useContext(SearchContext);
   const books = data?.slice(0, 24);
   console.log(data);
 
@@ -38,9 +38,10 @@ const Booklist = () => {
               {resultTitle}
             </p>
             {books?.map((book, index) => (
+              <Link to={"/home/"+book.key.replace('/works/','')}>
               <div
                 key={index}
-                className="bg-slate-100 w-72 p-2 m-5 mt-20 shadow-lg rounded-lg flex flex-col items-center transition-all hover:scale-105"
+                className="bg-slate-100 w-72 p-2 m-5 mt-20 shadow-lg rounded-lg flex flex-col items-center cursor-pointer transition-all hover:scale-105"
               >
                 <img
                   className="h-52 m-3 shadow-lg"
@@ -61,6 +62,8 @@ const Booklist = () => {
                   </p>
                 </div>
               </div>
+              </Link>
+              
             ))}
           </>
         )}

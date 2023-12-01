@@ -1,15 +1,13 @@
 import React from 'react'
 import Search from '../Search'
 import Booklist from '../Booklist/Booklist'
-import SearchContextProvider from '../../context/SearchContextProvider';
+
 const Body = () => {
 
   return (
-    <div>
-      <SearchContextProvider>
+    <div className=''>
         <Search/>
         <Booklist/>
-      </SearchContextProvider>
     </div>
   )
 }

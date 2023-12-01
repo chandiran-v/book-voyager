@@ -12,8 +12,10 @@ const useSearch = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (search.trim() !== '') {
     setSearchValue(search);
     setSearch('');
+    }
   };
 
 
