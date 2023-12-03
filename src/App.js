@@ -1,11 +1,11 @@
 import React from 'react'
-import Header from './Components/Header/Header';
+import Header from './Components/Header/Header.js';
 import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
-import Home from './Pages/Home/Home'
+import Home from './Pages/Home/Home.js'
 import About from './Pages/About/About'
-import Bookdetials from './Components/Bookdetials/Bookdetials'
-import SearchContextProvider from './context/SearchContextProvider';
-import Footer from './Footer/Footer';
+import Bookdetials from './Components/Bookdetials/Bookdetials.js'
+import SearchContextProvider from './context/SearchContextProvider.js';
+import Footer from './Footer/Footer.js';
 
 const App = () => {
   return (

@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import SearchContext from "../../context/SearchContext";
+import SearchContext from "../../context/SearchContext.js";
 import coverNotFound from "../../Images/cover_not_found.jpg";
 import { LinkContainer } from 'react-router-bootstrap';
 

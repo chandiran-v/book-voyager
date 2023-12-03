@@ -1,5 +1,5 @@
 {
-  "homepage": "https://chandiran-v.github.io/book/",
+  "homepage": "https://chandiran-v.github.io/book-voyager/",
   "name": "book-voyager",
   "version": "0.1.0",
   "private": true,
@@ -41,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "gh-pages": "^6.1.0",
     "tailwindcss": "^3.3.5"
   }

@@ -1,6 +1,6 @@
 import React from 'react'
-import Search from '../Search'
-import Booklist from '../Booklist/Booklist'
+import Search from '../Search.js'
+import Booklist from '../Booklist/Booklist.js'
 
 const Body = () => {
 

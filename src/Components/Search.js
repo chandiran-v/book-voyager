@@ -1,6 +1,6 @@
 import React from 'react'
 import searchIcon from '../Images/searchIcon.png'
-import useSearch from '../useSearch';
+import useSearch from '../useSearch.js';
 
 const Search = () => {
     const {search,handleSearch, handleSubmit} = useSearch();

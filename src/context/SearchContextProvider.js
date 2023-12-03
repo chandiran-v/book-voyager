@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import SearchContext from "./SearchContext";
+import SearchContext from "./SearchContext.js";
 
 const SearchContextProvider = ({ children }) => {
   const [searchValue, setSearchValue] = useState("the lost world");
