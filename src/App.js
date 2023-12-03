@@ -10,7 +10,7 @@ import Footer from './Footer/Footer.js';
 const App = () => {
   return (
     <SearchContextProvider>
-      <RouterProvider router={router}>
+      <RouterProvider  router={router}>
       </RouterProvider>
     </SearchContextProvider>
   )
@@ -27,6 +27,7 @@ const Applayout = () =>{
 }
 
 const router = createBrowserRouter([
+  
   {
     path: '/',
     element: <Applayout/>,
@@ -44,7 +45,7 @@ const router = createBrowserRouter([
     },
   ]
   },
-]);
+], {basename: '/book-voyager',});
 
 export default App
 

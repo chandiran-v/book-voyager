@@ -5,7 +5,7 @@ const SearchContextProvider = ({ children }) => {
   const [searchValue, setSearchValue] = useState("the lost world");
   const [resultTitle, setresultTitle] = useState("");
   const [data, setData] = useState(null);
-  const URL = "http://openlibrary.org/search.json?title=";
+  const URL = "https://openlibrary.org/search.json?title=";
   const [isLoading, setIsLoading] = useState(true);
 
 
