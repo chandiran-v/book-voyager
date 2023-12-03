@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/book-voyager/static/css/main.c0b50660.css",
+    "main.js": "/book-voyager/static/js/main.e908e7a2.js",
+    "static/media/background.jpg": "/book-voyager/static/media/background.7b91002a9cd10039d058.jpg",
+    "static/media/cover_not_found.jpg": "/book-voyager/static/media/cover_not_found.69846940c7af3e651508.jpg",
+    "static/media/logo.jpeg": "/book-voyager/static/media/logo.243b76d06e95d7944fc1.jpeg",
+    "static/media/linkedin.png": "/book-voyager/static/media/linkedin.f249b38224ca41a0b909.png",
+    "static/media/phone-call.png": "/book-voyager/static/media/phone-call.20a0ed4204215b0502d9.png",
+    "static/media/email.png": "/book-voyager/static/media/email.51b08bcbb5af7a861c31.png",
+    "index.html": "/book-voyager/index.html",
+    "main.c0b50660.css.map": "/book-voyager/static/css/main.c0b50660.css.map",
+    "main.e908e7a2.js.map": "/book-voyager/static/js/main.e908e7a2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c0b50660.css",
+    "static/js/main.e908e7a2.js"
+  ]
+}
