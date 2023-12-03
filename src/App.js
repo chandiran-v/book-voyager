@@ -5,6 +5,7 @@ import Home from './Pages/Home/Home'
 import About from './Pages/About/About'
 import Bookdetials from './Components/Bookdetials/Bookdetials'
 import SearchContextProvider from './context/SearchContextProvider';
+import Footer from './Footer/Footer';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const Applayout = () =>{
     <>
     <Header/>
     <Outlet/>
+    <Footer/>
     </>
   );
 }
