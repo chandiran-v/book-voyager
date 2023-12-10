@@ -33,7 +33,6 @@ const Footer = () => {
         </div>
 
         <div className="flex items-center">
-          <i className="fas fa-link mr-2 text-gray-400" />
           <h3 className="text-lg font-semibold">Courtesy</h3>
           <p className="ml-2 text-black">Powered by <a href="https://openlibrary.org/" className="text-gray-700">Open Library API</a></p>
         </div>

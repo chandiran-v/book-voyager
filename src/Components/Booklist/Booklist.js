@@ -46,18 +46,10 @@ const Booklist = () => {
     );
   };
 
-  return (
-    <div>
-      <div className="flex flex-wrap justify-center mb-10">
-        {isLoading ? (
-          renderSkeleton()
-        ) : (
-          <>
-            <p className="text-2xl font-medium mx-5 mt-5 w-full">
-              {resultTitle}
-            </p>
-
-            <div className="flex flex-wrap justify-center">
+  const renderBooks = () =>{
+    return (
+      <div>
+      <div className="flex flex-wrap justify-center">
               {currentBooks?.map((book, index) => (
                 <LinkContainer to={"/home/" + book.key.replace("/works/", "")} key={index}>
                   <div className="bg-slate-100 w-72 p-2 m-5 mt-20 shadow-lg rounded-lg flex flex-col items-center cursor-pointer transition-all hover:scale-105">
@@ -79,9 +71,25 @@ const Booklist = () => {
                 </LinkContainer>
               ))}
             </div>
-
             <Pagination totalPages={totalPages} currentPage={currentPage} onPageChange={setCurrentPage} />
 
+            </div>
+    )
+  }
+
+  return (
+    <div>
+      <div className="flex flex-wrap justify-center mb-10 ">
+        {isLoading ? (
+          renderSkeleton()
+        ) : (
+          <>
+            <p className="text-2xl font-medium mx-5 mt-5 w-full">
+              {resultTitle}
+            </p>
+            {renderBooks()}
+            <div>
+            </div>
           </>
         )}
       </div>
